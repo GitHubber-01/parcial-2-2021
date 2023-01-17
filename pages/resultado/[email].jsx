@@ -5,6 +5,7 @@ import MapItem from "../../components/Mapa";
 export default function Resultado({success, error, trinos}) {
     const router = useRouter();
 
+
     const containerStyle = {
 		position: 'relative',
 		width: '1000px',
@@ -40,7 +41,7 @@ export default function Resultado({success, error, trinos}) {
                     center={{lat: 36.7213028, lng: -4.4216366}}
                     markers={getMarkers()}
                     containerStyle={containerStyle}
-                /> 
+                />
             </div>
         </div>
     );

@@ -8,7 +8,7 @@ const MapItem = ({
 	zoom
 }) => {
 	return (
-		<div>
+		<div className="relative flex flex-col w-full h-full">
 			<Map
 				google = {google}
 				zoom = {zoom}
@@ -22,22 +22,13 @@ const MapItem = ({
 							position = {{ lat, lng }}
 						/>
                     ))
-                }
+				}
 			</Map>
-		</div>
-	)
-}
-
-const loading = () => {
-	return (
-		<div>
-			Cargando...
 		</div>
 	)
 }
 
 export default GoogleApiWrapper({
 	apiKey: process.env.API_KEY,
-	language: 'ES',
-	LoadingContainer: loading
+	language: 'ES'
 })(MapItem)
