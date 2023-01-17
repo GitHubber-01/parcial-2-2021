@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "dotenv": "^16.0.3",
     "google-maps-react": "^2.0.6",
     "mongoose": "^6.8.3",
     "next": "13.1.1",
